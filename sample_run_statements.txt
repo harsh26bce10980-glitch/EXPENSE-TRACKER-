@@ -1,0 +1,87 @@
+EXPENSE TRACKER — SAMPLE RUN (STATEMENTS)
+==========================================
+This transcript mirrors the test data and results shown in the project
+report (Sample Results / Screenshots section, Figs. 1-5).
+
+--- Adding expenses (Menu option 1) ---
+Enter expense name: College Canteen
+Enter amount: 120
+Enter category: FOOD
+Expense added successfully!
+
+Enter expense name: Bus Pass
+Enter amount: 200
+Enter category: TRAVEL
+Expense added successfully!
+
+Enter expense name: Notebook
+Enter amount: 180
+Enter category: EDUCATION
+Expense added successfully!
+
+Enter expense name: Movie
+Enter amount: 250
+Enter category: ENTERTAINMENT
+Expense added successfully!
+
+Enter expense name: Lunch
+Enter amount: 150
+Enter category: FOOD
+Expense added successfully!
+
+--- Viewing all expenses (Menu option 2) ---
+----------- ALL EXPENSES -----------
+1. College Canteen | ₹120.0 | FOOD
+2. Bus Pass | ₹200.0 | TRAVEL
+3. Notebook | ₹180.0 | EDUCATION
+4. Movie | ₹250.0 | ENTERTAINMENT
+5. Lunch | ₹150.0 | FOOD
+-------------------------------------
+
+--- Total spending (Menu option 3) ---
+Total Spending: ₹900.0
+
+--- Category-wise spending (Menu option 4) ---
+------ CATEGORY-WISE SPENDING ------
+FOOD : ₹270.0
+TRAVEL : ₹200.0
+EDUCATION : ₹180.0
+ENTERTAINMENT : ₹250.0
+-------------------------------------
+
+--- Highest expense (Menu option 5) ---
+---------- HIGHEST EXPENSE ----------
+Expense Name : Movie
+Amount       : ₹250.0
+Category     : ENTERTAINMENT
+--------------------------------------
+
+--- Budget status before setting a budget (Menu option 7) ---
+----------- BUDGET STATUS -----------
+Please set your budget first.
+
+--- Setting monthly budget (Menu option 6) ---
+Enter your monthly budget: 2000
+Monthly budget set successfully!
+
+--- Budget status after setting a budget (Menu option 7) ---
+----------- BUDGET STATUS -----------
+Monthly Budget   : 2000.0
+Total Spending   : 900.0
+Remaining amount : ₹1100.0
+--------------------------------------
+
+--- Exit (Menu option 8) ---
+Exiting Expense Tracker. Goodbye!
+
+------------------------------------------
+Validation / edge-case statements (also tested in the report):
+- Invalid menu choice ("abc" / "2d") -> "Invalid choice. Please enter a
+  number between 1 and 8."
+- Invalid amount ("abc")            -> "Invalid amount. Please enter a
+  numeric value."
+- Empty expense name                -> "Expense name cannot be empty."
+- Empty category                    -> "Category cannot be empty."
+- Zero or negative amount (0 / -100)-> "Amount must be greater than zero."
+- Restarting the program            -> "Loaded 5 expense(s) from
+  expense.txt." (persistence confirmed)
